@@ -31,7 +31,8 @@ def profile(name):
 
 @app.route("/post/<int:post_id>")
 def post(post_id):
-    return f"Post #{post_id}"
+    return f"Post #{post_id
+    }"
 
 
 if __name__ == "__main__":
