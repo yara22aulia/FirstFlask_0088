@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flask POST Application</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to Flask</h1>
+
+        <h2>Form Input Nama</h2>
+
+        <form action="/" method="POST">
+
+            <label for="nama">Masukkan Nama:</label>
+
+            <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama Anda"
+            >
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        {% if hasil %}
+            <div class="hasil">
+                <label>{{ hasil }}</label>
+            </div>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
